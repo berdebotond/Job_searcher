@@ -1,0 +1,23 @@
+type Company {
+  id: ID!
+  name: String!
+  location: String!
+  website: String!
+  size: String!
+  established: String!
+  years_remote: String!
+}
+
+type Job {
+  id: ID!
+  name: String!
+  description: String!
+  url: String!
+  additional_info: String!
+  company: String!
+}
+
+type Query {
+  companies: [Company!]!
+  jobs: [Job!]!
+}
